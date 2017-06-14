@@ -7,7 +7,7 @@ import router from './router';
 
 Vue.config.productionTip = false;
 Vue.use(VueProgressBar, {
-  color: 'rgb(143, 255, 199)',
+  color: '#41b883',
   failedColor: 'red',
   height: '2px',
 });
