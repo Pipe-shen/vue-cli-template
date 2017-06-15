@@ -67,3 +67,4 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
    2. axios 封装，处理token 等拦截器功能
    3. nginx 反向代理处理跨域
    4. mock server
+   5. eslint 补充rules
