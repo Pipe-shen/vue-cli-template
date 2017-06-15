@@ -5,6 +5,7 @@
 ## Build Setup
 
 ``` bash
+
 # install dependencies
 npm install
 
@@ -32,7 +33,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 ## 目录结构
 
 ```
-├── build                      // 构建相关  
+├── build                      // 构建相关
 ├── config                     // 配置相关
 ├── src                        // 源代码
 │   ├── api                    // 所有请求 按业务模块划分子文件
@@ -59,3 +60,10 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 └── package.json               // package.json
 ```
 
+
+1. TODO 
+
+   1. analyzer 分析配置命令
+   2. axios 封装，处理token 等拦截器功能
+   3. nginx 反向代理处理跨域
+   4. mock server
