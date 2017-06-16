@@ -4,6 +4,7 @@ import Vue from 'vue';
 import VueProgressBar from 'vue-progressbar';
 import App from './App';
 import router from './router';
+import store from './store';
 
 Vue.config.productionTip = false;
 Vue.use(VueProgressBar, {
@@ -16,6 +17,7 @@ Vue.use(VueProgressBar, {
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App },
 });
