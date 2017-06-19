@@ -7,6 +7,22 @@ import router from './router';
 import store from './store';
 
 Vue.config.productionTip = false;
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.requireAuth)) {
+    if (!store.state.auth) {
+      next({
+        path: '/login',
+        query: { redirect: to.fullPath },
+      });
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+});
+
 Vue.use(VueProgressBar, {
   color: '#41b883',
   failedColor: 'red',
