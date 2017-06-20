@@ -1,10 +1,11 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
-import VueProgressBar from 'vue-progressbar';
 import App from './App';
 import router from './router';
 import store from './store';
+import './utils/progress';
+import './utils/validate';
 
 Vue.config.productionTip = false;
 
@@ -21,12 +22,6 @@ router.beforeEach((to, from, next) => {
   } else {
     next();
   }
-});
-
-Vue.use(VueProgressBar, {
-  color: '#41b883',
-  failedColor: 'red',
-  height: '2px',
 });
 
 /* eslint-disable no-new */
