@@ -36,17 +36,17 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 ├── build                      // 构建相关
 ├── config                     // 配置相关
 ├── src                        // 源代码
-│   ├── api                    // 所有请求 按业务模块划分子文件
+│   ├── api                    // 所有请求 按业务模块划分子文件（根据业务模块来划分views，并且将views 和 api 两个模块一一对应）
 │   ├── assets                 // 主题 字体等静态资源
 │   ├── components             // 全局公用组件
 │   ├── directive              // 全局指令
-│   ├── filtres                // 全局filter
+│   ├── filters                // 全局filter
 │   ├── mock                   // mock数据
 │   ├── router                 // 路由
-│   ├── store                  // 全局store管理
-│   ├── styles                 // 全局样式
+│   ├── store                  // 全局store管理（管理全局性的数据、状态）
+│   ├── styles                 // 全局样式 （暂时不放外面）
 │   ├── utils                  // 全局公用方法
-│   ├── view                   // view 按业务模块划分子目录
+│   ├── view                   // view 按业务模块划分子目录 （根据业务模块来划分views，并且将views 和 api 两个模块一一对应）
 │   ├── App.vue                // 入口页面
 │   └── main.js                // 入口 加载组件 初始化等
 ├── static                     // 第三方不打包资源
@@ -61,7 +61,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 ```
 
 
-1. TODO 
+1. TODO
 
    1. analyzer 分析配置命令
    2. axios 封装，处理token 等拦截器功能
