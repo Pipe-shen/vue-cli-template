@@ -68,3 +68,4 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
    3. nginx 反向代理处理跨域
    4. mock server
    5. eslint 补充rules
+   6. 每个post要加loading和延迟，get暂时不加
