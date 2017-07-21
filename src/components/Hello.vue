@@ -22,14 +22,32 @@
 </template>
 
 <script>
-export default {
-  name: 'hello',
-  data() {
-    return {
-      msg: this.$route.name || 'Welcome to Your Vue.js App',
-    };
-  },
-};
+  import hello from 'api/hello';
+  
+  export default {
+    name: 'hello',
+    data() {
+      return {
+        msg: this.$route.name || 'Welcome to Your Vue.js App',
+      };
+    },
+    created() {
+      hello.getHello()
+        .then(res => {
+          console.log(res);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+      hello.getHello2()
+        .then(res => {
+          console.log(res);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    },
+  };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
