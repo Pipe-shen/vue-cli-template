@@ -1,3 +1,4 @@
+/*
 // http://eslint.org/docs/user-guide/configuring
 
 module.exports = {
@@ -39,3 +40,4 @@ module.exports = {
     'max-len': ["error", 120]
   }
 }
+*/

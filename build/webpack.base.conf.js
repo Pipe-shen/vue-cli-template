@@ -23,8 +23,9 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      'src': resolve('src'),
       'components': resolve('src/components'),
+      'views': resolve('src/views'),
       'api': resolve('src/api'),
       'utils': resolve('src/utils'),
       'store': resolve('src/store'),
@@ -73,8 +74,15 @@ module.exports = {
   },
   plugins: [
     new webpack.ProvidePlugin({
-      $: 'jquery' ,
+      $: 'jquery',
       'jQuery': 'jquery'
-    })
+    }),
+    /*new webpack.optimize.UglifyJsPlugin({
+      compress:{
+        warnings: false,
+        drop_debugger: true,
+        drop_console: true
+      }
+    })*/
   ]
-};
+}

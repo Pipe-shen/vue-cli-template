@@ -1,11 +1,7 @@
-import fetch from 'utils/fetch';
+import fetch from 'utils/fetch'
 
-function getHello() {
-  return fetch.get('/api/Web/getHomeData');
+export default {
+  getHello () {
+    return fetch.get('/api/Web/getHomeData')
+  },
 }
-
-function getHello2() {
-  return fetch.get('/api/Web/getDictionary?typeCode=NewsCategory');
-}
-
-export default { getHello, getHello2 };

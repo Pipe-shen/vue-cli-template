@@ -6,6 +6,8 @@ import router from './router';
 import store from './store';
 import './utils/progress';
 import './utils/validate';
+import './utils/functions'
+import './utils/components'
 
 Vue.config.productionTip = false;
 
